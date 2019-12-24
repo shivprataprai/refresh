@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
+const config = require("./config")
 app.get('/',(req,res)=>{
-    res.send('Hello World')
+    res.send(config)
 })
-app.listen(process.env.PORT,()=>console.log('server started'))
+app.listen(config.PORT,()=>console.log('server started '+config.PORT))

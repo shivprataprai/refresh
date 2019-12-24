@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node helloworld.js",
+    "start": "cross-env ENV=production node helloworld.js",
+    "develop": "cross-env ENV=develop node helloworld.js",
+    "add": "git add .",
+    "commit": "git commit -m 'autodeploy' ",
+    "push":"git push",
+    "deploy": "npm run add && npm run commit && npm run push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
