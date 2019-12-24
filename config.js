@@ -1,5 +1,5 @@
 const data = {}
-if(process.env.ENV === "production"){
+if(process.env.ENV === "prod"){
     data.PORT=process.env.PORT
     data.mongo_url="atlas"
 }
