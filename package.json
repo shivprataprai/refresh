@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env ENV=prod node helloworld.js",
+    "start": "ENV=prod node helloworld.js",
     "develop": "cross-env ENV=develop node helloworld.js",
     "add": "git add .",
     "commit": "git commit -m 'autodeploy' ",
